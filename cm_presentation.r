@@ -1,3 +1,4 @@
+# AI was used to assist with developing the code for this model.
 # Install and load required packages
 if (!require(tidyverse)) install.packages("tidyverse")
 if (!require(gganimate)) install.packages("gganimate")
