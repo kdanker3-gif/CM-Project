@@ -4,3 +4,5 @@ Juror Decision Making
 [View R Code](cm_presentation.r)
 # CM-Presentation GIF
 ![Presentation GIF](cm_presentation.gif)
+# Presentation Video
+[Presentation Youtube link](https://youtu.be/GKKcB0nbl4g)
