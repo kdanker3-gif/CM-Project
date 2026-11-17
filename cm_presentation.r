@@ -16,7 +16,8 @@ ddm_trial <- function(drift, upper_threshold, lower_threshold = 0.35, starting_p
   time_path <- c(time)
 
   while (time < max_time) {
-    # Wiener process increment: drift * dt + noise
+    # Update accumulated evidence utilizing the Drift Diffusion Model:
+    # systematic evidence (drift * dt) + random trial-to-trial variability (noise)
     evidence <- evidence + drift * dt + sqrt(dt) * rnorm(1)
     time <- time + dt
 
@@ -41,7 +42,7 @@ ddm_trial <- function(drift, upper_threshold, lower_threshold = 0.35, starting_p
   ))
 }
 
-# Set up the parameters for our simulation
+# Simulation Parameters
 juror_empirical_params <- tibble(
   verdict_type = c("Guilty", "Not Proven", "Not Guilty"),
   prior_point = c(47.2, 44.9, 41.5) / 100,       # Initial likelihood of guilt z_0
