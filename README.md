@@ -6,3 +6,5 @@ Juror Decision Making
 ![Presentation GIF](cm_presentation.gif)
 # Presentation Video
 [Presentation Youtube link](https://youtu.be/GKKcB0nbl4g)
+# Juror Decision Making Article
+[View Article](cm_article.pdf)
